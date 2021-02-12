@@ -1,9 +1,14 @@
 <h1>About</h1>
-<p>This is <a href="https://github.com/mdecourse/fosgit.git">https://github.com/mdecourse/fosgit.git</a> 與 <a href="https://fossil.kmol.info/fosgit">https://fossil.kmol.info/fosgit</a> </p>
+<p>This is <a href="https://github.com/mdecourse/fosgit.git">https://github.com/mdecourse/fosgit.git</a> 與 <a href="https://fossil.kmol.info/fosgit">https://fossil.kmol.info/fosgit</a></p>
 <p>相對的靜態網頁則為:</p>
 <p><a href="http://mde.tw/fosgit">http://mde.tw/fosgit</a></p>
 <p>以及</p>
 <p><a href="http://fossil.kmol.info/doc/trunk/index.html">http://fossil.kmol.info/doc/trunk/index.html</a></p>
 <p>這個專案主要目的在測試可不可能單一 CMSiMDE 倉儲的內容能夠完全寄存在 Github 與 Fossil SCM.</p>
+<h1>Fossil SCM 設定</h1>
+<p>為了要讓 Fossil SCM 倉儲在 fossil add . 執行時可以納入 .git 目錄與相關以 . 開頭命名的特殊設定檔案, 必須在Fossil SCM 網際 settings 中勾選 dotfiles (V) 選項.</p>
+<p>另外, 為了讓 CMSiMDE 靜態網頁能夠在 Fossil SCM doc project documentation 中跨網站擷取 <a href="https://fonts.googleapis.com">https://fonts.googleapis.com</a> 上的 .js 檔案, 則必須在 Fossil SCM 網際 settings 中的 default-csp 欄位中加入 <a href="https://fonts.googleapis.com">https://fonts.googleapis.com</a>, 詳細說明請參考 <a href="https://fossil-scm.org/home/doc/trunk/www/defcsp.md">https://fossil-scm.org/home/doc/trunk/www/defcsp.md</a></p>
+<h1>Github 設定</h1>
+<p>在 Fossil SCM 倉儲與 Github 系統進行整合的唯一隱憂就是 _FOSSIL_ 檔案存放 Fossil SCM 的各種版本資料, 若檔案大小超過 100 MB, 可能就必須依照 <a href="https://docs.github.com/en/github/managing-large-files/what-is-my-disk-quota">https://docs.github.com/en/github/managing-large-files/what-is-my-disk-quota</a> 說明進行後續處理.</p>
 <p></p>
 <p></p>

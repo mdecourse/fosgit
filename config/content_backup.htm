@@ -1,1 +1,14 @@
-<h1>About</h1><p>This is <a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a></p><p>目前的 cmsimde 在編輯器下方新增一個 csave 按鈕, 意即 collabrative save, 當動態網際管理系統在多人同時維護登入維護網頁內容時, 編輯各頁面時段, 該頁面可能已經改版, 因此使用 csave 按鈕存檔時, 會導入當下最新的該頁面內容, 並試圖與編輯中的頁面內容進行合併.</p><p>使用 csave 按鈕存檔無法刪除頁面資料.</p><p>使用 Edit All 模式, 無法使用 csave 按鈕（尚未測試).</p><p></p><p></p>
+<h1>About</h1>
+<p>This is <a href="https://github.com/mdecourse/fosgit.git">https://github.com/mdecourse/fosgit.git</a> 與 <a href="https://fossil.kmol.info/fosgit">https://fossil.kmol.info/fosgit</a></p>
+<p>相對的靜態網頁則為:</p>
+<p><a href="http://mde.tw/fosgit">http://mde.tw/fosgit</a></p>
+<p>以及</p>
+<p><a href="http://fossil.kmol.info/doc/trunk/index.html">http://fossil.kmol.info/doc/trunk/index.html</a></p>
+<p>這個專案主要目的在測試可不可能單一 CMSiMDE 倉儲的內容能夠完全寄存在 Github 與 Fossil SCM.</p>
+<h1>Fossil SCM 設定</h1>
+<p>為了要讓 Fossil SCM 倉儲在 fossil add . 執行時可以納入 .git 目錄與相關以 . 開頭命名的特殊設定檔案, 必須在Fossil SCM 網際 settings 中勾選 dotfiles (V) 選項.</p>
+<p>另外, 為了讓 CMSiMDE 靜態網頁能夠在 Fossil SCM doc project documentation 中跨網站擷取 <a href="https://fonts.googleapis.com">https://fonts.googleapis.com</a> 上的 .js 檔案, 則必須在 Fossil SCM 網際 settings 中的 default-csp 欄位中加入 <a href="https://fonts.googleapis.com">https://fonts.googleapis.com</a>, 詳細說明請參考 <a href="https://fossil-scm.org/home/doc/trunk/www/defcsp.md">https://fossil-scm.org/home/doc/trunk/www/defcsp.md</a></p>
+<h1>Github 設定</h1>
+<p>在 Fossil SCM 倉儲與 Github 系統進行整合的唯一隱憂就是 _FOSSIL_ 檔案存放 Fossil SCM 的各種版本資料, 若檔案大小超過 50 MB, 可能就無法存放到 Github, 或許必須付費才能解決問題?</p>
+<p></p>
+<p></p>
